@@ -32,7 +32,7 @@ app.use(helmet.crossOriginResourcePolicy({policy: "cross-origin"}));
 app.use(morgan("common"));
 
 app.use(cors({
-    origin: ["http://localhost:3000" /**the second could be the url after we deploy this website */],
+    origin: ["http://localhost:3000", "https://tect-app.vercel.app" /**the second could be the url after we deploy this website */],
     credentials: true
 }));
 
